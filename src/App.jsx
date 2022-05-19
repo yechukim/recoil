@@ -1,11 +1,13 @@
 import { RecoilRoot } from 'recoil';
 import './App.css';
 import Counter from './component/Counter';
+import { TodoList } from './component/TodoList';
 
 function App() {
 	return (
 		<RecoilRoot>
-			<Counter />
+			{/* <Counter /> */}
+			<TodoList />
 		</RecoilRoot>
 	);
 }

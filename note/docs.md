@@ -18,7 +18,7 @@
 > 컴포넌트 입장에서는 atom 읽을 때와 같은 hook으로 selector 또한 읽을 수 있지만, 어떤 훅은 writable state 에만 쓸 수 있음(`useRecoilState`) 
 ✏️ 모든 atom은 writeable state, but not all selctors are writable state (get, set 프로퍼티 가지는 selectors)
 
-<img src="../images/read_write.png" width="400">
+<img src="../image/read_write.png" width="600">
 
 ### 비동기 데이터 쿼리 
 > 비동기의 경우 async 함수를 사용하여 프로미스를 리턴하기만 하면 된다\

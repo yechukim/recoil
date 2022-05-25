@@ -16,9 +16,15 @@
 > 파생된 상태: 상태의 변화!\
 > 즉, 다른 데이터에 의존하는 다른 데이터를 만들 수 있음\
 > 컴포넌트 입장에서는 atom 읽을 때와 같은 hook으로 selector 또한 읽을 수 있지만, 어떤 훅은 writable state 에만 쓸 수 있음(`useRecoilState`) 
+
 ✏️ 모든 atom은 writeable state, but not all selctors are writable state (get, set 프로퍼티 가지는 selectors)
 
 <img src="../image/read_write.png" width="600">
+
+
+✅ `useRecoilState` 는 마치 `useState`와 같다. 첫번째 원소는 상태, 두번째 원소는 상태를 업데이트 하는 함수 반환\
+✅ 업데이트 함수가 필요없고 상태값만 필요하다면 `useRecoilValue` 훅을 사용할 \
+✅ 업데이트 함수만 필요하다면 `useRecoilState`
 
 ### 비동기 데이터 쿼리 
 > 비동기의 경우 async 함수를 사용하여 프로미스를 리턴하기만 하면 된다\
